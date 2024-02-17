@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -11,19 +11,227 @@
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/b86594bddf.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/style.css">
+    <!-- custom css -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        greeny: '#1DD100',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
-    <header>
-
+    <header class="container mx-auto">
+        <!-- navbar -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start font-raleway">
+                <a class="btn btn-ghost text-3xl font-extrabold">P-Ticket</a>
+            </div>
+            <div class="navbar-center hidden md:flex lg:flex gap-10 font-raleway">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Destination</a>
+                <a href="">Search</a>
+            </div>
+            <div class="navbar-end  font-raleway">
+                <button class="flex gap-2 border p-2 bg-[#1DD1001A]">
+                    <div class="text-green-500 font-semibold">
+                        <p>Bus</p>
+                    </div>
+                    <div>
+                        <img src="./images/bus-icon.png" alt="">
+                    </div>
+                </button>
+            </div>
+        </div>
     </header>
 
     <main>
+        <!-- banner -->
+        <section class="container mx-auto font-raleway mt-5">
+            <div
+                class="bg-[url(./images/banner.png)] bg-no-repeat bg-cover bg-center rounded-3xl text-center space-y-10 p-5 lg:p-20">
+                <h2 class="lg:text-5xl font-extrabold text-white">End-to-End Travel with <br> <br><span
+                        class="text-[#1DD100]">P Paribahan</span></h2>
+                <p class="font-inter text-white">P Paribahan is a prominent bus service that has been providing reliable
+                    and efficient transportation solutions to passengers. <br>
+                    With a fleet of well-maintained buses and a commitment to customer satisfaction, <br> P Paribahan
+                    has established itself as a preferred choice for commuters. </p>
+                <button class="btn bg-[#1DD100] border-0 font-bold">Buy Tickets</button>
+            </div>
+        </section>
 
+        <!-- best offer for you -->
+        <section class=" mt-20 container mx-auto">
+            <h3 class="font-raleway text-center text-3xl font-bold">Best offers for you</h3>
+            <!-- offer stat -->
+            <div class=" mt-10 flex flex-col gap-5 lg:flex-row justify-around">
+                <!-- yellow div -->
+                <div class="flex bg-[#FFBF0F] gap-20 rounded-2xl">
+                    <div class="p-5 lg:p-10 space-y-2">
+                        <h3 class="font-inter font-bold text-3xl">15% OFF</h3>
+                        <p class="font-semibold textlg">on your next purchase</p>
+                        <p class="text-sm">use by January 2024</p>
+                    </div>
+                    <!-- middle border -->
+                    <div class="border-l border-dashed border-l-2">
+                        <div class="absolute rounded-full w-7 h-7 bg-white -ml-4 -mt-3"></div>
+                        <div class="absolute rounded-full w-7 h-7 bg-white -ml-4 mt-[159px]"></div>
+                    </div>
+                    <div class="p-5 lg:p-10 space-y-2">
+                        <h3 class="font-raleway font-bold text-2xl">NEW15</h3>
+                        <p class="font-raleway">Coupon Code</p>
+                    </div>
+                </div>
+                <!-- pink div -->
+                <div class="bg-[#F78C9C] flex gap-20 rounded-2xl">
+
+                    <div class=" p-5 lg:p-10 space-y-2">
+                        <h3 class="font-inter font-bold text-3xl">20% OFF</h3>
+                        <p class="font-semibold textlg">on your next purchase</p>
+                        <p class="text-sm">use by January 2024</p>
+                    </div>
+                    <!-- middle border -->
+                    <div class="border-l border-dashed border-l-2">
+                        <div class="absolute rounded-full w-7 h-7 bg-white -ml-4 -mt-3"></div>
+                        <div class="absolute rounded-full w-7 h-7 bg-white -ml-4 mt-[159px]"></div>
+                    </div>
+                    <div class=" p-5 lg:p-10 space-y-2">
+                        <h3 class="font-raleway font-bold text-2xl">Couple 20</h3>
+                        <p class="font-raleway">Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+            <div class=" flex justify-center">
+                <button class="btn mt-10 text-[#1DD100] bg-white border-[#1DD100] rounded-lg">See All Offers</button>
+            </div>
+        </section>
+
+        <!-- P.H Paribahan -->
+        <section class="container mx-auto mt-20 bg-[#F7F8F8]">
+            <!-- 1st div text -->
+            <div class="text-center space-y-3 pt-20 pb-10">
+                <h2 class="font-raleway font-bold text-3xl">P.H Paribahan</h2>
+                <p class="font-inter">The company offers a range of routes, connecting various cities and towns,
+                    ensuring convenient travel options for passengers. <br> Known for its punctuality and safety
+                    measures, P Paribahan strives to create <br>a comfortable and enjoyable journey for its customers.
+                </p>
+            </div>
+
+
+            <!-- 2nd div greenline paribahan -->
+            <div class="lg:flex gap-36  bg-white">
+                <div class="  p-10 rounded-lg ">
+                    <div class="flex justify-between">
+                        <!-- img, greenline, coach -->
+                        <div class="lg:flex gap-3">
+                            <div>
+                                <img src="./images/bus-logo.png" alt="">
+                            </div>
+                            <div>
+                                <h3 class="font-raleway font-bold text2">Greenline Paribahan</h3>
+                                <p>Coach-009-WEB ! AC_Business</p>
+                            </div>
+                        </div>
+                        <!-- seats left -->
+                        <div>
+                            <button class="flex gap-1 text-greeny bg-[#1DD10026] rounded-lg p-2">
+                                <img src="./images/seat-green.png" alt="">
+                                <span>40</span>
+                                <p>Seats left</p>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- route, departure, boarding -->
+                    <div class="bg-[#F7F8F8]">
+                        <!-- route -->
+                        <div class="mt-5 p-2">
+                            <div class="font-raleway flex justify-between mb-5">
+                                <p>Route</p>
+                                <p class="font-semibold">Dhaka - Sylhet</p>
+                            </div>
+                            <hr>
+                        </div>
+                        <!-- departure time -->
+                        <div class=" p-2">
+                            <div class="font-raleway flex justify-between mb-5">
+                                <p>Departure Time</p>
+                                <p class="font-semibold">9:00 PM</p>
+                            </div>
+                            <hr>
+                        </div>
+                        <!-- boarding -->
+                        <div>
+                            <div class="flex flex-col gap-3 md:flex-col lg:flex-row gap-4 p-2">
+                                <button class="btn bg-[#0307120D]">Boarding Point - Laxmipur</button>
+                                <button class="btn bg-[#0307120D]">Dropping Point - Bogura</button>
+                                <button class="btn bg-[#0307120D]">Est. Time - 11 Hour</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- middle border -->
+                <div class="border-l border-dashed border-green-700 border-l-2 mt-10 mb-10">
+                </div>
+
+                <!-- per bus seat taka -->
+                <div class="font-raleway  bg-white space-y-2 lg:w-52 flex flex-col justify-center items-center ">
+                    <img src="./images/fare.png" alt="">
+                    <h2 class="font-bold text-xl">550 Taka</h2>
+                    <p>Per Seat</p>
+                </div>
+
+            </div>
+
+
+
+        </section>
     </main>
 
-    <footer>
+    <!-- footer section -->
+    <footer class=" p-20 bg-[#030712] text-white font-raleway">
+        <!-- 1st line -->
+        <div class="flex justify-between items-center">
+            <div class="space-y-3">
+                <h2 class="text-2xl font-bold">P-Ticket</h2>
+                <p class="font-inter text-xs ">P-Ticket is a digital platform to make your daily commuting better.</p>
+            </div>
+            <div class="space-y-3">
+                <div>
+                    <p>Download our app</p>
+                </div>
+                <div class="flex gap-3 border rounded-lg p-1">
+                    <img src="./images/playstore.png" alt="">
+                    <div>
+                        <p class="text-xs">Get it On</p>
+                        <p>Google Play</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- border -->
+        <div class="border-b border-dashed mt-10"></div>
+
+        <!-- last line -->
+        <div class="mt-10 flex justify-between">
+            <div>
+                <p class="font-inter text-xs text-neutral-content ">@all rights reserved, P-Ticket services limited.2024</p>
+            </div>
+            <div class="flex gap-5">
+                <p class="font-inter text-xs ">Terms & condition</p>
+                <p class="font-inter text-xs ">Return & refund policy</p>
+                <p class="font-inter text-xs ">Privacy policy</p>
+            </div>
+        </div>
     </footer>
 </body>
 

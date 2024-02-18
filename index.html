@@ -428,36 +428,41 @@
                                 <!-- head -->
                                 <thead class="border-b-2 border-dashed ">
                                     <tr>
-                                        <th class="text-black text-sm">Seats <span
-                                               id="seat-no" class="bg-greeny text-white px-1 rounded text-xs">0</span></th>
+                                        <th class="text-black text-sm">Seats <span id="seat-no"
+                                                class="bg-greeny text-white px-1 rounded text-xs">0</span></th>
                                         <th class="text-black text-sm ">Class</th>
                                         <th class="text-black text-sm ">Price</th>
                                     </tr>
                                 </thead>
-                                <tbody id="">
-                                    <!-- row 1 -->
+                                <tbody>
+                                    <!-- row  -->
                                     <tr>
-                                        <td id="seta-name"></td>
+                                        <td id="seat-name"></td>
                                         <td id="seat-class-name"></td>
                                         <td id="seat-price"></td>
                                     </tr>
-
                                 </tbody>
                             </table>
                             <!-- total price -->
                             <div class="flex justify-between px-3 mt-5 border-t-2">
                                 <h3 class="my-2">Total Price</h3>
-                                <h3 class="my-2">BDT <span>1100</span></h3>
+                                <h3 class="my-2">BDT <span id="total-price">0</span></h3>
+                            </div>
+                            <!-- discounted price -->
+                            <div id="dicount-price" class="text-center textlg text-greeny font-semibold">
+
                             </div>
                             <!-- apply coupon -->
-                            <div class="mx-5 mt-3 flex relative">
-                                <input class="p-4 rounded w-full border-2" type="text" placeholder="Have any copupon?">
-                                <button class="btn text-white bg-greeny  absolute right-1 bottom-1.5">Apply</button>
+                            <div id="apply-coupon" class="mx-5 mt-3 flex relative">
+                                <input id="coupon-text" class="p-4 rounded w-full border-2" type="text"
+                                    placeholder="Have any copupon?">
+                                <button id="apply-btn"
+                                    class="btn text-white bg-greeny  absolute right-1 bottom-1.5">Apply</button>
                             </div>
                             <!-- grand total-->
                             <div class="flex justify-between px-3 mt-3">
                                 <h3 class="my-2">Grand Total</h3>
-                                <h3 class="my-2">BDT <span>1100</span></h3>
+                                <h3 class="my-2">BDT <span id="grand-total">0</span></h3>
                             </div>
                         </div>
                         <!-- form -->
@@ -468,17 +473,39 @@
                                 </div>
                                 <input type="text" placeholder="Enter your name" class="input input-bordered w-full" />
                                 <div class="label">
-                                    <span class="label-text font-bold">Phone Number*</span>
+                                    <span  class="label-text font-bold">Phone Number*</span>
                                 </div>
-                                <input type="text" placeholder="Enter your phone number" class="input input-bordered w-full" />
+                                <input id="phone-no" type="text" placeholder="Enter your phone number"
+                                    class="input input-bordered w-full" />
                                 <div class="label">
                                     <span class="label-text font-bold">Email ID</span>
                                 </div>
-                                <input type="text" placeholder="Enter your email id" class="input input-bordered w-full" />
+                                <input type="text" placeholder="Enter your email id"
+                                    class="input input-bordered w-full" />
                             </label>
                         </div>
-                        <!-- next button -->
-                        <button class="btn w-full mt-5 bg-greeny text-white text-lg rounded-lg">Next</button>
+                        
+                        <!-- You can open the modal using ID.showModal() method -->
+                        <button id="next-active" class="pointer-events-none btn w-full mt-5 bg-greeny text-white text-lg rounded-lg" onclick="my_modal_3.showModal()">Next</button>
+                        <dialog id="my_modal_3" class="modal ">
+                            <div class="modal-box">
+                                <form method="dialog">
+                                    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                </form>
+                                <div class=" flex flex-col justify-center items-center bg-white space-y-3">
+                                    <img src="./images/success.png" alt="">
+                                    <h2 class="text-greeny text-2xl font-bold uppercase">Success</h2>
+                                    <div class="lg:w-[500px] text-center space-y-4">
+                                        <p class="font-semibold text-lg">Thank you for Booking Our Bus Seats.
+                                            We are working hard to find the best service and deals for you.
+                                        </p>
+                                        <p class="font-inter text-lg">Shortly you will find a confirmation in your email.</p>
+                                    </div>
+                                    <button id="continue" class="btn w-[300px] rounded-3xl bg-greeny text-white text-xl">Continue</button>
+                                </div>
+                            </div>
+                        </dialog>
+
                         <!-- terms, condition, policy -->
                         <div class="flex justify-between mt-5 font-inter text-sm">
                             <p>Terms and Conditions</p>
@@ -486,21 +513,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- success section -->
-        <section>
-            <div class="hidden flex flex-col justify-center items-center border bg-white p-14 space-y-7 ">
-                <img src="./images/success.png" alt="">
-                <h2 class="text-greeny text-2xl font-bold uppercase">Success</h2>
-                <div class="lg:w-[500px] text-center space-y-4">
-                    <p class="font-semibold text-lg">Thank you for Booking Our Bus Seats. 
-                        We are working hard to find the best service and deals for you. 
-                    </p>
-                    <p class="font-inter text-lg">Shortly you will find a confirmation in your email.</p>
-                </div>
-                <button class="btn w-[300px] rounded-3xl bg-greeny text-white text-xl">Continue</button>
             </div>
         </section>
     </main>

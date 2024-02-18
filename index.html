@@ -123,7 +123,7 @@
         </section>
 
         <!-- P.H Paribahan -->
-        <section class="container mx-auto mt-20 bg-[#F7F8F8]">
+        <section class="container mx-auto mt-20 pb-20 bg-[#F7F8F8]">
             <!-- 1st div text -->
             <div class="text-center space-y-3 pt-20 pb-10">
                 <h2 class="font-raleway font-bold text-3xl">P.H Paribahan</h2>
@@ -135,8 +135,8 @@
 
 
             <!-- 2nd div greenline paribahan -->
-            <div class="lg:flex gap-36  bg-white">
-                <div class="  p-10 rounded-lg ">
+            <div class="lg:flex gap-20 px-10 items-center bg-white m-10 lg:mx-20 rounded-xl">
+                <div class="p-5 rounded-lg ">
                     <div class="flex justify-between">
                         <!-- img, greenline, coach -->
                         <div class="lg:flex gap-3">
@@ -178,9 +178,15 @@
                         <!-- boarding -->
                         <div>
                             <div class="flex flex-col gap-3 md:flex-col lg:flex-row gap-4 p-2">
-                                <button class="btn bg-[#0307120D]">Boarding Point - Laxmipur</button>
-                                <button class="btn bg-[#0307120D]">Dropping Point - Bogura</button>
-                                <button class="btn bg-[#0307120D]">Est. Time - 11 Hour</button>
+                                <div>
+                                    <button class="btn bg-[#0307120D]">Boarding Point - Laxmipur</button>
+                                </div>
+                                <div>
+                                    <button class="btn bg-[#0307120D]">Dropping Point - Bogura</button>
+                                </div>
+                                <div>
+                                    <button class="btn bg-[#0307120D]">Est. Time - 11 Hour</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -188,11 +194,16 @@
                 </div>
 
                 <!-- middle border -->
-                <div class="border-l border-dashed border-green-700 border-l-2 mt-10 mb-10">
+                <!-- <div class="border-l border-dashed border-green-700 border-l-2 mt-10 mb-10">
+                </div> -->
+
+                <!-- middle border by image -->
+                <div class="flex justify-center items-center border-2 border-dashed ">
+                    <img src="./images/info-devider.png" alt="">
                 </div>
 
                 <!-- per bus seat taka -->
-                <div class="font-raleway  bg-white space-y-2 lg:w-52 flex flex-col justify-center items-center ">
+                <div class="font-raleway  bg-white space-y-2  flex flex-col justify-center items-center ">
                     <img src="./images/fare.png" alt="">
                     <h2 class="font-bold text-xl">550 Taka</h2>
                     <p>Per Seat</p>
@@ -200,13 +211,258 @@
 
             </div>
 
+            <!-- 3rd div bus seat -->
+            <div class="lg:grid grid-cols-2 bg-white  lg:mx-20 rounded-xl p-5">
+                <!-- left -->
+                <div>
+                    <h3 class="font-inter font-bold text-xl">Select Your Seat</h3>
+                    <!-- seat available and selected -->
+                    <div class="flex justify-between mt-3 p-3 border-t border-b border-dashed">
+                        <!-- available seat -->
+                        <div class="flex gap-2">
+                            <img src="./images/seat-gray.png" alt="">
+                            <p>Available</p>
+                        </div>
+                        <!-- selected seat -->
+                        <div class="flex gap-2 ">
+                            <img src="./images/seat-green-filled.png" alt="">
+                            <p class="text-greeny font-semibold">Selected</p>
+                        </div>
+                    </div>
+                    <!-- steering -->
+                    <div class=" flex justify-end mt-5">
+                        <div></div>
+                        <div class=" bg-[#0307121A] text-[#0307121A] rounded-lg px-8 py-2">
+                            <img src="./images/Vector.jpg" alt="">
+                        </div>
+                    </div>
 
+                    <!-- seat design -->
+                    <div class="flex gap-1 justify-between mt-5">
+                        <!--Left seats A, A1, A2 -->
+                        <div class="space-y-5">
+                            <div class="flex items-center lg:gap-4">
+                                <!-- A -->
+                                <div>
+                                    <p class="w-5">A</p>
+                                </div>
+                                <!-- A1, A2 -->
+                                <div class="flex gap-1 lg:gap-10 ">
+                                    <p class="btn px-7 w-20">A1</p>
+                                    <p class="btn px-7 w-20">A2</p>
+                                </div>
+                            </div>
+                            <!-- B, B2, B3 -->
+                            <div class="flex items-center lg:gap-4">
+                                <!-- B -->
+                                <div>
+                                    <p class="w-5">B</p>
+                                </div>
+                                <!-- B1, B2 -->
+                                <div class="flex gap-1 lg:gap-10">
+                                    <p class="btn px-7 w-20">B1</p>
+                                    <p class="btn px-7 w-20">B2</p>
+                                </div>
+                            </div>
+                            <!-- C, C1, C2 -->
+                            <div class="flex items-center lg:gap-4">
+                                <!-- C -->
+
+                                <p class="w-5">C</p>
+
+                                <!-- C1, C2 -->
+                                <div class="flex gap-1 lg:gap-10">
+                                    <p class="btn px-7 w-20">C1</p>
+                                    <p class="btn px-7 w-20">C2</p>
+                                </div>
+                            </div>
+                            <!-- D, D1, D2 -->
+                            <div class="flex items-center lg:gap-4">
+                                <!-- D -->
+                                <p class="w-5">D</p>
+
+                                <!-- D1, D2 -->
+                                <div class="flex gap-1 lg:gap-10 ">
+                                    <p class="btn px-7 w-20">D1</p>
+                                    <p class="btn px-7 w-20">D2</p>
+                                </div>
+                            </div>
+                            <!-- E, E1, E2 -->
+                            <div class="flex items-center lg:gap-4">
+                                <!-- E -->
+                                <div>
+                                    <p class="w-5">E</p>
+                                </div>
+                                <!-- E1, E2 -->
+                                <div class="flex gap-1 lg:gap-10">
+                                    <p class="btn px-7 w-20">E1</p>
+                                    <p class="btn px-7 w-20">E2</p>
+                                </div>
+                            </div>
+                            <!-- F, F1, F2 -->
+                            <div class="flex items-center lg:gap-4">
+                                <!-- F -->
+                                <div>
+                                    <p class="w-5">F</p>
+                                </div>
+                                <!-- F1, F2 -->
+                                <div class="flex gap-1 lg:gap-10">
+                                    <p class="btn px-7 w-20">F1</p>
+                                    <p class="btn px-7 w-20">F2</p>
+                                </div>
+                            </div>
+                            <!-- G, G1, G2 -->
+                            <div class="flex items-center lg:gap-4">
+                                <!-- G -->
+                                <div>
+                                    <p class="w-5">G</p>
+                                </div>
+                                <!-- G1, G2 -->
+                                <div class="flex gap-1 lg:gap-10">
+                                    <p class="btn px-7 w-20">G1</p>
+                                    <p class="btn px-7 w-20">G2</p>
+                                </div>
+                            </div>
+                            <!-- H, H1, H2 -->
+                            <div class="flex items-center lg:gap-4">
+                                <!-- H -->
+                                <div>
+                                    <p class="w-5">H</p>
+                                </div>
+                                <!-- H1, H2 -->
+                                <div class="flex gap-1 lg:gap-10">
+                                    <p class="btn px-7 w-20">H1</p>
+                                    <p class="btn px-7 w-20">H2</p>
+                                </div>
+                            </div>
+                            <!-- I, I1, I2 -->
+                            <div class="flex items-center lg:gap-4">
+                                <!-- I -->
+                                <div>
+                                    <p class="w-5">I</p>
+                                </div>
+                                <!-- I1, I2 -->
+                                <div class="flex gap-1 lg:gap-10">
+                                    <p class="btn px-7 w-20">I1</p>
+                                    <p class="btn px-7 w-20">I2</p>
+                                </div>
+                            </div>
+                            <!-- J, J1, J2 -->
+                            <div class="flex items-center lg:gap-4">
+                                <!-- J -->
+                                <div>
+                                    <p class="w-5">J</p>
+                                </div>
+                                <!-- J1, J2 -->
+                                <div class="flex gap-1 lg:gap-10">
+                                    <p class="btn px-7 w-20">J1</p>
+                                    <p class="btn px-7 w-20">J2</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- right seats A3, A4 -->
+                        <div class="space-y-5">
+                            <!-- A3, A4 -->
+                            <div class="flex gap-1 lg:gap-10 ">
+                                <p class="btn px-7 w-20">A3</p>
+                                <p class="btn px-7 w-20">A4</p>
+                            </div>
+                            <!-- B3, B4 -->
+                            <div class="flex gap-1 lg:gap-10 ">
+                                <p class="btn px-7 w-20">B3</p>
+                                <p class="btn px-7 w-20">B4</p>
+                            </div>
+                            <!-- C3, C4 -->
+                            <div class="flex gap-1 lg:gap-10">
+                                <p class="btn px-7 w-20">C3</p>
+                                <p class="btn px-7 w-20">C4</p>
+                            </div>
+                            <!-- D3, D4 -->
+                            <div class="flex gap-1 lg:gap-10">
+                                <p class="btn px-7 w-20">D3</p>
+                                <p class="btn px-7 w-20">D4</p>
+                            </div>
+                            <!-- E3, E4 -->
+                            <div class="flex gap-1 lg:gap-10">
+                                <p class="btn px-7 w-20">E3</p>
+                                <p class="btn px-7 w-20">E4</p>
+                            </div>
+                            <!-- F3, F4 -->
+                            <div class="flex gap-1 lg:gap-10">
+                                <p class="btn px-7 w-20">F3</p>
+                                <p class="btn px-7 w-20">F4</p>
+                            </div>
+                            <!-- G3, G4 -->
+                            <div class="flex gap-1 lg:gap-10">
+                                <p class="btn px-7 w-20">G3</p>
+                                <p class="btn px-7 w-20">G4</p>
+                            </div>
+                            <!-- H3, H4 -->
+                            <div class="flex gap-1 lg:gap-10">
+                                <p class="btn px-7 w-20">H3</p>
+                                <p class="btn px-7 w-20">H4</p>
+                            </div>
+                            <!-- I3, I4 -->
+                            <div class="flex gap-1 lg:gap-10">
+                                <p class="btn px-7 w-20">I3</p>
+                                <p class="btn px-7 w-20">I4</p>
+                            </div>
+                            <!-- J3, J4 -->
+                            <div class="flex gap-1 lg:gap-10">
+                                <p class="btn px-7 w-20">J3</p>
+                                <p class="btn px-7 w-20">J4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- right form -->
+                <div class="lg:border-l lg:mx-10">
+                    <div class="px-5 ">
+                        <h3 class="font-inter font-bold text-xl border-b border-dashed pt-5 lg:pt-0 pb-5 ">Select Your Seat</h3>
+                        <!-- table -->
+                        <div class="bg-[#F7F8F8] mt-5 rounded-lg pt-5 pb-5">
+                            <table class="table">
+                                <!-- head -->
+                                <thead class="border-b-2 border-dashed">
+                                    <tr>
+                                        <th class="text-black text-sm ">Seats <span
+                                                class="bg-greeny text-white px-1 rounded text-xs">2</span></th>
+                                        <th class="text-black text-sm ">Class</th>
+                                        <th class="text-black text-sm ">Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="">
+                                    <!-- row 1 -->
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                            <!-- total price -->
+                            <div class="flex justify-between px-10 mt-5 border-t-2">
+                                <h3 class="my-2">Total Price</h3>
+                                <h3 class="my-2">BDT <span>1100</span></h3>
+                            </div>
+                            <!-- apply coupon -->
+                            <div class="m-5 flex relative">
+                                <input class="p-4 rounded w-full border-2" type="text" placeholder="Have any copupon?">
+                                <button class="btn text-white bg-greeny  absolute right-1 bottom-1.5">Apply</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </section>
     </main>
 
     <!-- footer section -->
-    <footer class=" p-20 bg-[#030712] text-white font-raleway">
+    <footer class=" mt-20 p-20 bg-[#030712] text-white font-raleway">
         <!-- 1st line -->
         <div class="space-y-3 lg:flex justify-between items-center">
             <div class="space-y-3">

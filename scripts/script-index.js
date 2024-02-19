@@ -80,6 +80,7 @@ for (let index = 0; index < seats.length; index++) {
 
                 // coupon apply
                 const applyBtn = document.getElementById('apply-btn');
+                applyBtn.disabled = false
                
                 if(count4 != 4){
                     applyBtn.addEventListener("click", select4)

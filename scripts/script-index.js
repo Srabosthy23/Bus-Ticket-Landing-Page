@@ -138,7 +138,21 @@ for (let index = 0; index < seats.length; index++) {
         else {
             alert("you can't select one seat twicely");
         }
-    })
+
+        // modal task
+        const phoneNo = document.getElementById('phone-no');
+        const next = document.getElementById('next-active')
+        
+        phoneNo.addEventListener("keypress", (e)=> {
+            const value = e.currentTarget.value.length;
+            console.log(value)
+            if(value >= 0){
+                next.disabled = false
+            }
+        })
+
+    })  
+
 }
 
 

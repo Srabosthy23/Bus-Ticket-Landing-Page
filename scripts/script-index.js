@@ -79,9 +79,13 @@ for (let index = 0; index < seats.length; index++) {
                 grandTotal.innerText = grandPrice;
 
                 // coupon apply
-                if (count4 === 4) {
-                    // console.log("success")
-                    const applyBtn = document.getElementById('apply-btn');
+                const applyBtn = document.getElementById('apply-btn');
+               
+                if(count4 != 4){
+                    applyBtn.addEventListener("click", select4)
+                }
+                else if(count4 === 4) {
+                    applyBtn.removeEventListener("click", select4)
                     applyBtn.addEventListener("click", function () {
                         // console.log("clicked")
 
@@ -105,8 +109,6 @@ for (let index = 0; index < seats.length; index++) {
                         }
 
                         // get the couple coupon text 
-                        // const coupleText = document.getElementById('coupon-text');
-                        // console.log(couponText.value);
                         else if (couponText.value === "Couple 20") {
                             const discount = price * 0.2;
                             const finalGrandTotal = grandPrice - discount;

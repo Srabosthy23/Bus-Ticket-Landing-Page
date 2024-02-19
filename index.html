@@ -27,9 +27,9 @@
 </head>
 
 <body>
-    <header class="container mx-auto mt-5">
+    <header id="navbar-section" class="container mx-auto mt-5">
         <!-- navbar -->
-        <div class="navbar bg-base-100">
+        <div id="navbar-section" class="navbar bg-base-100 ">
             <div class="navbar-start font-raleway">
                 <a class="btn btn-ghost text-3xl font-extrabold">P-Ticket</a>
             </div>
@@ -434,13 +434,13 @@
                                         <th class="text-black text-sm ">Price</th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <tbody id="row">
                                     <!-- row  -->
-                                    <tr>
+                                    <!-- <tr>
                                         <td id="seat-name"></td>
                                         <td id="seat-class-name"></td>
                                         <td id="seat-price"></td>
-                                    </tr>
+                                    </tr> -->
                                 </tbody>
                             </table>
                             <!-- total price -->
@@ -486,7 +486,7 @@
                         </div>
                         
                         <!-- You can open the modal using ID.showModal() method -->
-                        <button id="next-active" class="pointer-events-none btn w-full mt-5 bg-greeny text-white text-lg rounded-lg" onclick="my_modal_3.showModal()">Next</button>
+                        <button id="next-active" class=" btn w-full mt-5 bg-greeny text-white text-lg rounded-lg" onclick="my_modal_3.showModal()">Next</button>
                         <dialog id="my_modal_3" class="modal ">
                             <div class="modal-box">
                                 <form method="dialog">
@@ -501,7 +501,9 @@
                                         </p>
                                         <p class="font-inter text-lg">Shortly you will find a confirmation in your email.</p>
                                     </div>
-                                    <button id="continue" class="btn w-[300px] rounded-3xl bg-greeny text-white text-xl">Continue</button>
+                                    <form method="dialog">
+                                        <button class="btn w-[300px] rounded-3xl bg-greeny text-white text-xl">Continue</button>
+                                    </form>
                                 </div>
                             </div>
                         </dialog>

@@ -22,7 +22,7 @@ for (let index = 0; index < seats.length; index++) {
 
             const phoneNo = document.getElementById('phone-no');
             const phoneNoValue = phoneNo.value;
-            if (phoneNoValue.length > 0){
+            if (phoneNoValue.length > 0) {
                 const nextButton = document.getElementById('next-active')
                 console.log(nextButton)
                 nextButton.classList.remove("pointer-events-none")
@@ -50,30 +50,29 @@ for (let index = 0; index < seats.length; index++) {
                 // show available seta
                 curretSeatLeft.innerText = availableSeat;
 
-                // append seat-name, seat-class-name, seat-price
-                // get the seat name
-                const seatNameElement = document.getElementById('seat-name');
-                const seatNameText = seat.innerText;
-                seatNameElement.append(seatNameText)
+                // get the seat-name, class-name and seat price
+                const rowItem = document.getElementById('row')
+                const tr = document.createElement("tr");
 
+                const td1 = document.createElement("td");
+                td1.innerText = seat.innerText;
 
-                // get the seat-class-name
-                const seatClassNameElement = document.getElementById('seat-class-name')
-                const seatClassNameText = "Economoy"
-                seatClassNameElement.append(seatClassNameText)
+                const td2 = document.createElement("td");
+                td2.innerText = "Economoy";
 
+                const td3 = document.createElement("td");
+                td3.innerText = 550;
 
-                // // // get the seat price
-                const seatPriceElement = document.getElementById('seat-price')
-                const seatPriceValue = 550;
-                seatPriceElement.append(seatPriceValue);
+                tr.appendChild(td1)
+                tr.appendChild(td2)
+                tr.appendChild(td3)
+                rowItem.appendChild(tr)
 
                 // total price count
                 const totalPrice = document.getElementById('total-price')
                 const price = updatedSeatNo * 550;
                 //  console.log("total price:", price)
                 totalPrice.innerText = price;
-
                 // grand total Price
                 const grandTotal = document.getElementById('grand-total');
                 const grandPrice = updatedSeatNo * 550;
@@ -88,7 +87,7 @@ for (let index = 0; index < seats.length; index++) {
 
                         // get the coupon text NEW15
                         const couponText = document.getElementById('coupon-text');
-                        // console.log(couponText.value);
+
                         if (couponText.value === "NEW15") {
                             const discount = price * 0.15;
                             const finalGrandTotal = grandPrice - discount;
@@ -128,6 +127,7 @@ for (let index = 0; index < seats.length; index++) {
                         }
                     })
                 }
+                
             }
             else {
                 alert("You can't select more than 4")
@@ -138,4 +138,5 @@ for (let index = 0; index < seats.length; index++) {
         }
     })
 }
+
 
